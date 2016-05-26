@@ -135,7 +135,7 @@ class EncryptData
 		
 		$keyData = '<?php'."\n".'$key = \''.$this->getEncryptionKey().'\';'."\n".'?>';
 		
-		if($this->WriteData(str_replace('/public_html','',$_SERVER['DOCUMENT_ROOT']).'/wabw/includes/config/key.php', $keyData) === true)
+		if($this->WriteData(str_replace('/public_html','',$_SERVER['DOCUMENT_ROOT']).'/includes/config/key.php', $keyData) === true)
 		{
 			$this->setKeyCreated(true);
 			return true;
